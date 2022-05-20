@@ -1,0 +1,248 @@
+/*  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    /* transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86); */
+    background-image: url(/public/assets/img/fondo_dashboard.jpg);
+    background-position: relative;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+
+
+
+
+/* Css para el uso de login */
+/* Inicio */
+.login{
+    display: flex;
+    width: 40%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    /* border: solid 1px black; */
+
+
+}
+
+.login1 {
+    position: absolute;
+    color: white;
+    min-height: 80%;
+    width: 100%;
+  
+    /* ocuapamos todo el ancho */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-position: relative;
+    background-size: cover;
+    /* border: solid 1px black; */
+}
+
+.inputs {
+margin: auto;
+width: 90%;
+height: auto;
+}
+
+.inputs input {
+    width: 60%;
+    height: auto;
+    margin: 5px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.inputs button {
+margin: 10px;
+width: 40%;
+height: auto;
+}
+
+/* ---------- Fin ------------ */
+
+/* css para mostrar el contenido */
+.contenido-menu
+{
+    left: 250px;
+    top: 50px;
+    width: calc(100% - 250px);
+    height: calc(100% - 50px);
+    position: absolute;
+    transition: 0.5s;
+    
+}
+
+.contenido-menu.active{
+    left: 72px;
+    top: 50px;
+    position: absolute;
+    width: calc(100% - 72px);
+    height: calc(100% - 50px);
+    transition: 0.5s;
+
+}
+
+.tituloFactura {
+margin: 1% 0 0 1%;
+width: 98%;
+background-color: #eeeeee;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.tituloFactura h2 {
+padding: 5px;
+width: 100%;
+background: #1d1d24;
+color: #fff;
+}
+
+.cabeceraFactura {
+height: auto;
+/* background-color: #eeeeee; */
+border-radius: 6px;
+padding: 0 2% 2% 2%;
+width: 98%;
+}
+
+
+.sombrasgraficas {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    text-align: center;
+    width: 100%;
+}
+.sombrasgraficas:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.cardsDashboard {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.svglimpiarnota {
+    fill: #c74343;
+}
+
+.svglimpiarnota:hover {
+    cursor: pointer;
+    fill: #7e2a2a;
+}
+
+
+.svgagregarnota {
+    fill: #929292;
+}
+
+.svgagregarnota:hover {
+    cursor: pointer;
+    fill: #1d1d24;
+}
+
+.centrar-iconos{
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============================================================================ */
+/* Estilos para la tabla de notas */
+
+.table__modificar{
+    border: solid 1px #ccc;
+    box-shadow: 0 1px 5px 1px #ccc;
+    border-radius: 5px;
+}
+
+.titulo{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+/* ============================================= */
+
+/* Estilos para las tablas cabecera */
+.table__cabecera{
+    background-color: #1d1d24;
+    color: #fff;
+}
+
+.buscarFirmas{
+    display: flex;
+    padding: 5px;
+    width: 90%;
+    height: auto;
+}
+
+.buscarFirmas svg{
+    margin-right: 7px;
+}
+
+
+.disabled{
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px black;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.btn{
+    background-color: #1d1d24;
+    height: auto;
+    width: auto;
+    color: #fff;
+    margin: 0 15px;
+}
+
+.item{
+    border: solid 2px white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btngrabar {
+    background-color: #25be46;
+    margin-top: 15px;
+    float: right;
+    height: auto;
+    width: auto;
+    color: #fff;
+    margin: 0 15px;
+    border: none;
+  }
+
+.factura__subtotal{
+    border: solid 1px black;
+    display: flex;
+    justify-content: end;
+    width: 98%;
+    margin-left: 8px;
+    
+
+}
+.ampliar{
+    width: 50%;
+}
+.factura__mover__derecha{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
